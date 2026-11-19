@@ -6,7 +6,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Configurable Business Details
   const CONFIG = {
-    whatsappNumber: '919975862159', // Country code without '+' followed by number
+    whatsappNumber: '919960503700', // Country code without '+' followed by number
+    secondaryNumber: '917067470145',
     businessName: 'V. R. Sharma & Associates',
     primaryEmail: 'contact@vrsharmalaw.com'
   };
