@@ -1,5 +1,5 @@
 /**
- * V. R. Sharma & Associates - Legal Advocacy Landing Page
+ * Adv. Bhagwan M. Awsare & Associates - Legal Advocacy Landing Page
  * Vanilla JavaScript Functionality
  */
 
@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const CONFIG = {
     whatsappNumber: '919960503700', // Country code without '+' followed by number
     secondaryNumber: '917067470145',
-    businessName: 'V. R. Sharma & Associates',
-    primaryEmail: 'contact@vrsharmalaw.com'
+    businessName: 'Adv. Bhagwan M. Awsare & Associates',
+    primaryEmail: 'adv.awsareassociates@gmail.com'
   };
 
   // 1. Initialize AOS (Animate On Scroll)
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Offer immediate WhatsApp connectivity
         const sendToWhatsapp = confirm(
-          "Your enquiry has been securely logged! Would you like to connect directly on WhatsApp with Senior Advocate V. R. Sharma's desk right now?"
+          "Your enquiry has been securely logged! Would you like to connect directly on WhatsApp with Senior Advocate Bhagwan M. Awsare's desk right now?"
         );
 
         if (sendToWhatsapp) {

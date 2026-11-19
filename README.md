@@ -1,4 +1,4 @@
-# V. R. Sharma & Associates • Advocates & Legal Counsel
+# Adv. Bhagwan M. Awsare & Associates • Advocates & Legal Counsel
 
 A modern, premium, responsive business landing page designed for an elite legal practice, law firm, and senior advocate chambers.
 
