@@ -69,6 +69,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100vw;
 }
 
 body {
@@ -76,9 +79,22 @@ body {
   color: var(--text-charcoal);
   background-color: #ffffff;
   line-height: 1.7;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100vw;
   position: relative;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Strictly prevent horizontal sliding and X-axis overflow across layout */
+section,
+header,
+footer,
+main,
+nav,
+.top-bar {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Headings */
@@ -661,6 +677,7 @@ img {
               radial-gradient(circle at 90% 80%, rgba(232, 221, 204, 0.3) 0%, transparent 40%),
               var(--secondary-soft);
   position: relative;
+  overflow: hidden;
 }
 
 .about-image-wrapper {
@@ -1148,6 +1165,7 @@ img {
 .gallery-section {
   background: var(--secondary-soft);
   position: relative;
+  overflow: hidden;
 }
 
 .gallery-filters .btn-filter {
@@ -1327,6 +1345,7 @@ img {
 .faq-section {
   background: #fbf9f5;
   position: relative;
+  overflow: hidden;
 }
 
 .accordion-item {
@@ -1376,6 +1395,7 @@ img {
 .contact-section {
   background-color: #ffffff;
   position: relative;
+  overflow: hidden;
 }
 
 .contact-info-panel {
@@ -1593,6 +1613,23 @@ img {
 }
 
 @media (max-width: 991px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    position: relative;
+  }
+
+  section,
+  footer,
+  header,
+  .top-bar,
+  #mainNavbar {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+  }
+
   .hero-section {
     padding: 85px 0 60px;
     text-align: center;
@@ -1651,6 +1688,24 @@ img {
 }
 
 @media (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Prevent horizontal AOS translations from causing x-axis slide */
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    transform: translateY(20px) !important;
+  }
+
+  [data-aos="fade-left"].aos-animate,
+  [data-aos="fade-right"].aos-animate {
+    transform: translateY(0) !important;
+  }
+
   .hero-title {
     font-size: 2.35rem;
   }
@@ -1690,6 +1745,31 @@ img {
 }
 
 @media (max-width: 576px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 14px;
+    padding-right: 14px;
+    max-width: 100% !important;
+    overflow-x: hidden;
+  }
+
+  .brand-title {
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+  }
+
+  .brand-subtitle {
+    font-size: 0.58rem;
+    letter-spacing: 0.8px;
+  }
+
   .top-bar {
     font-size: 0.76rem;
     line-height: 1.4;
